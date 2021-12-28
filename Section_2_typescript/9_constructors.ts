@@ -18,7 +18,7 @@ Constructor. So every class can have a Constructor, which is basically
 a method that is called when we create an instance of that class. 
 */
 
-class Pointss {
+class Pointsss {
     x: number;
     y: number;
 
@@ -41,5 +41,5 @@ class Pointss {
     }
 }
 
-let points = new Pointss(6, 5);
+let points = new Pointsss(6, 5);
 point.draw();
