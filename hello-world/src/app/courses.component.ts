@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { listenerCount } from "process";
 import { CoursesServices } from "./courses.service";
 
 //Remember: In typescript, In name of class is used the Pascal case convention and also, if the class is a component, we need
@@ -25,8 +24,20 @@ import { CoursesServices } from "./courses.service";
       </li>
     </ul>
 
+    <!-- interpolation -->
+    <img src="{{ imageUrl}}" />
+    <!-- property binding -->
+    <img [src]="imageUrl"/>
 
-  `,
+    <!-- Attribute Binding -->
+    <table>
+      <tr>
+        <td [attr.colspan]="colSpan"></td>
+      </tr>
+    </table>
+
+    <button class="btn btn-primary">Save</button>
+  `
   /*
   Now the benefit of using the back tick, is that we can break up
   this template into multiple lines and make it more readable.
@@ -48,6 +59,8 @@ import { CoursesServices } from "./courses.service";
 export class CoursesComponent{
   title = "List of courses";
   courses;
+  imageUrl = "http://lorempixel.com.br/500/300";
+  colSpan = 2;
 
   /*
   So first we need to add a constructor here, because a constructor is where we initialize an object.
@@ -102,4 +115,3 @@ where we have an element like Courses, Angular is going to
 render the template for this Component inside that element.
 */
 
-ul>li
