@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-favorite',
-  templateUrl: './favorite.component.html',
-  styleUrls: ['./favorite.component.css']
+  selector: 'favorite',
+  template: `
+  <div>
+  <span class="glyphicon glyphicon-star" (click)="onClick()" [class.glyphicon-star-empty]="isFavorite"></span>  
+  </div>
+
+  <p *ngIf="!isStarEmpty" class="glyphicon glyphicon-star" (click)="StarEm()"></p>
+  <p *ngIf="isStarEmpty" class="glyphicon glyphicon-star-empty" (click)="StarEm()"></p>
+
+  `
 })
-export class FavoriteComponent implements OnInit {
 
-  constructor() { }
+export class FavoriteComponent{
+  isFavorite:boolean = true;
+  isStarEmpty:boolean=true;
 
-  ngOnInit(): void {
+  StarEm(){
+      this.isStarEmpty=!this.isStarEmpty;
+    }
+  onClick(){
+    this.isFavorite = !this.isFavorite;
   }
+
 
 }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FavoriteComponent } from './favorite.component';
+import { TextfieldComponent } from './textfield.component';
 
-describe('FavoriteComponent', () => {
-  let component: FavoriteComponent;
-  let fixture: ComponentFixture<FavoriteComponent>;
+describe('TextfieldComponent', () => {
+  let component: TextfieldComponent;
+  let fixture: ComponentFixture<TextfieldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FavoriteComponent ]
+      declarations: [ TextfieldComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FavoriteComponent);
+    fixture = TestBed.createComponent(TextfieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

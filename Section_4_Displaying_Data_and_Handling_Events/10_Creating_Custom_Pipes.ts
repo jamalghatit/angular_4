@@ -1,4 +1,4 @@
-// Go to app folder and create the file sumarry.pipe.ts
+// Go to app folder and create the file summary.pipe.ts
 
 // import { Component} from '@angular/core';
 
