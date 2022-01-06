@@ -4,12 +4,8 @@ import { Component } from '@angular/core';
   selector: 'favorite',
   template: `
   <div>
-  <span class="glyphicon glyphicon-star" (click)="onClick()" [class.glyphicon-star-empty]="isFavorite"></span>  
+  <span class="glyphicon glyphicon-star" (click)="onClick()" [class.glyphicon-star-empty]="isFavorite"></span>
   </div>
-
-  <p *ngIf="!isStarEmpty" class="glyphicon glyphicon-star" (click)="StarEm()"></p>
-  <p *ngIf="isStarEmpty" class="glyphicon glyphicon-star-empty" (click)="StarEm()"></p>
-
   `
 })
 
