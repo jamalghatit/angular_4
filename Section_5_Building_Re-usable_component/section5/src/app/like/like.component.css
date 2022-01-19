@@ -1,0 +1,12 @@
+.glyphicon-heart {
+  font-size: 20px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 25px 20px;
+}
+
+.likes {
+  font-size: 18px;
+}

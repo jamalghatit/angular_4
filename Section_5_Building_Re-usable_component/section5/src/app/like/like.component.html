@@ -1,0 +1,11 @@
+<div class="grid-container">
+  <div>
+    <span class="grid-child glyphicon glyphicon-heart "
+    (click)="onClick()"
+    [style.color]="isActive? 'deeppink': '#ccc' "
+    (mouseover)="onMouseOver()"
+    [style.cursor]="isMouseOver? 'pointer': 'default'"
+    ></span>
+  </div>
+  <div class='grid-child likes'> {{ likesCount }} </div>
+</div>

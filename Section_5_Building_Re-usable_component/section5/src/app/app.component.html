@@ -1,1 +1,15 @@
-<favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
+<!-- <favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite> -->
+
+<!-- <app-panel>
+  <ng-container class="heading" >Header</ng-container>
+  <div class="body">
+    <h2>Body</h2>
+    <p>Some content here....</p>
+  </div>
+
+</app-panel> -->
+
+<app-like
+  [likesCount]="tweet.likesCount"
+  [isActive]="tweet.isLiked"
+></app-like>
